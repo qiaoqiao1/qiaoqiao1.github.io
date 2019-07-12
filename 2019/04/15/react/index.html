@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>一只走上人生巅峰的乔胖纸~~~~~~啦啦啦 | 乔胖纸的博客</title>
+  <title>react笔记 | 乔胖纸的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人博客搭建成功 第一篇写一下自己吧！ 爱情：（所谓世间，那就是你）">
-<meta name="keywords" content="生活,爱情,工作">
+  <meta name="description" content="react项目搭建笔记（react+Antd+yarn）一、使用create-react-app创建一个React项目先装脚手架 npm install -g create-react-app 然后运行 create-react-app 你的项目名">
+<meta name="keywords" content="学习,react">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一只走上人生巅峰的乔胖纸~~~~~~啦啦啦">
-<meta property="og:url" content="http://yoursite.com/2019/04/12/mine-life/index.html">
+<meta property="og:title" content="react笔记">
+<meta property="og:url" content="http://yoursite.com/2019/04/15/react/index.html">
 <meta property="og:site_name" content="乔胖纸的博客">
-<meta property="og:description" content="个人博客搭建成功 第一篇写一下自己吧！ 爱情：（所谓世间，那就是你）">
+<meta property="og:description" content="react项目搭建笔记（react+Antd+yarn）一、使用create-react-app创建一个React项目先装脚手架 npm install -g create-react-app 然后运行 create-react-app 你的项目名">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-12T11:09:09.354Z">
+<meta property="og:updated_time" content="2019-07-12T11:29:24.047Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一只走上人生巅峰的乔胖纸~~~~~~啦啦啦">
-<meta name="twitter:description" content="个人博客搭建成功 第一篇写一下自己吧！ 爱情：（所谓世间，那就是你）">
+<meta name="twitter:title" content="react笔记">
+<meta name="twitter:description" content="react项目搭建笔记（react+Antd+yarn）一、使用create-react-app创建一个React项目先装脚手架 npm install -g create-react-app 然后运行 create-react-app 你的项目名">
   
     <link rel="alternative" href="/atom.xml" title="乔胖纸的博客" type="application/atom+xml">
   
@@ -146,28 +146,63 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-mine-life" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-react" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      一只走上人生巅峰的乔胖纸~~~~~~啦啦啦
+      react笔记
     </h1>
   
 
         
-        <a href="/2019/04/12/mine-life/" class="archive-article-date">
-  	<time datetime="2019-04-12T05:45:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-12</time>
+        <a href="/2019/04/15/react/" class="archive-article-date">
+  	<time datetime="2019-04-15T07:42:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-15</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>个人博客搭建成功 第一篇写一下自己吧！</p>
-<h3 id="爱情：（所谓世间，那就是你）"><a href="#爱情：（所谓世间，那就是你）" class="headerlink" title="爱情：（所谓世间，那就是你）"></a>爱情：（所谓世间，那就是你）</h3>
+        <h3 id="react项目搭建笔记（react-Antd-yarn）"><a href="#react项目搭建笔记（react-Antd-yarn）" class="headerlink" title="react项目搭建笔记（react+Antd+yarn）"></a>react项目搭建笔记（react+Antd+yarn）</h3><h5 id="一、使用create-react-app创建一个React项目"><a href="#一、使用create-react-app创建一个React项目" class="headerlink" title="一、使用create-react-app创建一个React项目"></a>一、使用create-react-app创建一个React项目</h5><p>先装脚手架</p>
+<p><code>npm install -g create-react-app</code></p>
+<p>然后运行</p>
+<p><code>create-react-app 你的项目名</code><br><a id="more"></a></p>
+<p>cd 进去</p>
+<p><code>yarn  start</code></p>
+<h5 id="二、安装Antd-（官网）"><a href="#二、安装Antd-（官网）" class="headerlink" title="二、安装Antd （官网）"></a>二、安装Antd （<a href="https://ant.design/index-cn" target="_blank" rel="noopener">官网</a>）</h5><p><code>yarn add antd</code></p>
+<p>引入组件 样式（按需加载 使用 <a href="https://github.com/ant-design/babel-plugin-import" target="_blank" rel="noopener">babel-plugin-import</a>（推荐） <a href="https://ant.design/docs/react/introduce-cn" target="_blank" rel="noopener">https://ant.design/docs/react/introduce-cn</a>）</p>
+<p><code>import { Button } from &#39;antd&#39;;</code></p>
+<p><code>import &#39;antd/dist/antd.css&#39;;</code></p>
+<h5 id="三、单向操作不可逆，暴露项目的配置，可以自由配置项目所需的依赖，不使用的版本零配置即可开发"><a href="#三、单向操作不可逆，暴露项目的配置，可以自由配置项目所需的依赖，不使用的版本零配置即可开发" class="headerlink" title="三、单向操作不可逆，暴露项目的配置，可以自由配置项目所需的依赖，不使用的版本零配置即可开发"></a>三、单向操作不可逆，暴露项目的配置，可以自由配置项目所需的依赖，不使用的版本零配置即可开发</h5><p><code>yarn eject</code></p>
+<h5 id="四、在React中使用react-router-dom路由-react-router-4-0"><a href="#四、在React中使用react-router-dom路由-react-router-4-0" class="headerlink" title="四、在React中使用react-router-dom路由   react router 4.0"></a>四、在React中使用react-router-dom路由   react router 4.0</h5><p>安装 </p>
+<p><code>yarn add react-router-dom --save</code></p>
+<p>用法</p>
+<p>HashRouter: 中间有#   里面要有一个根节点（<div></div>）</p>
+<p>BrowerRouter:</p>
+<p>Route:</p>
+<p>​    path: <code>&lt;Route path=&quot;/three:number&quot; /&gt;</code>  取值：<code>this.props.match.params.number</code></p>
+<p>​    exact:精准匹配 “/“  “/about”</p>
+<p>​    component:</p>
+<p>​    render:</p>
+<p>NavLink:</p>
+<p>Link:</p>
+<p>Switch: 匹配到第一个路由就结束  （4.0 允许匹配多个路由）Swithc包Route</p>
+<p>Redirect:</p>
+<h5 id="四、项目随手记"><a href="#四、项目随手记" class="headerlink" title="四、项目随手记"></a>四、项目随手记</h5><p>public里面的资源可以通过  /+具体路径  访问到 publid可以部署</p>
+<p>react不支持双向绑定，但是antd框架集成了一些到东西，可以让获取表单值变得容易</p>
+<p>const {<br>    getFieldDecorator<br>} = this.props.form;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;FormItem&gt;</span><br><span class="line">    &#123;</span><br><span class="line">        getFieldDecorator(&apos;username&apos;,&#123;</span><br><span class="line">            // initialValue: &apos;Jack&apos;,//默认值</span><br><span class="line">            rules:[</span><br><span class="line">                &#123;</span><br><span class="line">                    required: true,</span><br><span class="line">                    message: &apos;用户名不能为空！&apos;</span><br><span class="line">                &#125;,</span><br><span class="line">                &#123;</span><br><span class="line">                    min:5,max:10,</span><br><span class="line">                    message:&apos;最大长度不能大于10，最小长度不能小于5&apos;</span><br><span class="line">                &#125;,</span><br><span class="line">                &#123;</span><br><span class="line">                    pattern:new RegExp(&apos;^\\w+$&apos;,&apos;g&apos;),</span><br><span class="line">                    message:&apos;用户名必须为英文字母或数字&apos;</span><br><span class="line">                &#125;</span><br><span class="line">            ],//规则</span><br><span class="line">        &#125;)(</span><br><span class="line">            &lt;Input prefix=&#123;&lt;Icon type=&quot;user&quot;/&gt;&#125; placeholder=&quot;请输入用户名&quot;/&gt;</span><br><span class="line">        )</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/FormItem&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//提交事件</span><br><span class="line">handleSubmit=()=&gt;&#123;</span><br><span class="line">     let userInfo = this.props.form.getFieldsValue();</span><br><span class="line">     this.props.form.validateFields((err,values)=&gt;&#123;//校验rules</span><br><span class="line">         if(!err)&#123;</span><br><span class="line">             message.success(`$&#123;userInfo.username&#125;,恭喜你，通过`);</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>生成后台数据平台 easy-mock       js插件mock.js</p>
+<p>setState会驱动render的执行</p>
+<p>使用百度地图，react使用第三方插件 在public-》index.html中插入   百度地图创建ak时，白名单<em>号为英文 </em></p>
+<p><strong>因为单页面应用是模块化的，所有的对象都是import模块导入的，如果不是模块导入的会认为是一个非法的，解决办法，可以挂载到window上，系统不会检测window是不是合法的</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">this.map = new window.BMap.Map(&quot;orderDetailMap&quot;);</span><br></pre></td></tr></table></figure>
+<p>封装promise知识点    return new Promise((resolve,reject)=&gt;{}） 返回一个promise  调用的时候用then继续</p>
+
       
 
       
@@ -206,15 +241,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">爱情</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">工作</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
         		</li>
       		
 		</ul>
@@ -270,7 +301,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/12/mine-life/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/04/15/react/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -284,15 +315,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/04/15/react/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          react笔记
-        
-      </div>
-    </a>
   
+    <a href="/2019/04/12/mine-life/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">一只走上人生巅峰的乔胖纸~~~~~~啦啦啦</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -317,7 +344,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#爱情：（所谓世间，那就是你）"><span class="toc-number">1.</span> <span class="toc-text">爱情：（所谓世间，那就是你）</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#react项目搭建笔记（react-Antd-yarn）"><span class="toc-number">1.</span> <span class="toc-text">react项目搭建笔记（react+Antd+yarn）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#一、使用create-react-app创建一个React项目"><span class="toc-number">1.0.1.</span> <span class="toc-text">一、使用create-react-app创建一个React项目</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#二、安装Antd-（官网）"><span class="toc-number">1.0.2.</span> <span class="toc-text">二、安装Antd （官网）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#三、单向操作不可逆，暴露项目的配置，可以自由配置项目所需的依赖，不使用的版本零配置即可开发"><span class="toc-number">1.0.3.</span> <span class="toc-text">三、单向操作不可逆，暴露项目的配置，可以自由配置项目所需的依赖，不使用的版本零配置即可开发</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#四、在React中使用react-router-dom路由-react-router-4-0"><span class="toc-number">1.0.4.</span> <span class="toc-text">四、在React中使用react-router-dom路由   react router 4.0</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#四、项目随手记"><span class="toc-number">1.0.5.</span> <span class="toc-text">四、项目随手记</span></a></li></ol></li></ol></li></ol>
                     </div>
                 </span>
             </div>
