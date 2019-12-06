@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: react | 乔胖纸的博客</title>
+  <title>js交互方法 | 乔胖纸的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录一哈我放荡不羁的美好生活~~~">
-<meta property="og:type" content="website">
-<meta property="og:title" content="乔胖纸的博客">
-<meta property="og:url" content="http://yoursite.com/tags/react/index.html">
+  <meta name="description" content="新旧js交互方法    页面      方法名 旧的交互 新的交互   打开新页面 shineyue.pushurl(&amp;#39;https://www.baidu.com&amp;#39;) var msg={url:&amp;#39;https://www.baidu.com&amp;#39;}; shineyue.pushurl(msg)    shineyue.pushurl(&amp;#39;https://www.ba">
+<meta name="keywords" content="js,原生">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js交互方法">
+<meta property="og:url" content="http://yoursite.com/2019/12/06/js交互方法/index.html">
 <meta property="og:site_name" content="乔胖纸的博客">
-<meta property="og:description" content="记录一哈我放荡不羁的美好生活~~~">
+<meta property="og:description" content="新旧js交互方法    页面      方法名 旧的交互 新的交互   打开新页面 shineyue.pushurl(&amp;#39;https://www.baidu.com&amp;#39;) var msg={url:&amp;#39;https://www.baidu.com&amp;#39;}; shineyue.pushurl(msg)    shineyue.pushurl(&amp;#39;https://www.ba">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-12-06T12:03:23.302Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="乔胖纸的博客">
-<meta name="twitter:description" content="记录一哈我放荡不羁的美好生活~~~">
+<meta name="twitter:title" content="js交互方法">
+<meta name="twitter:description" content="新旧js交互方法    页面      方法名 旧的交互 新的交互   打开新页面 shineyue.pushurl(&amp;#39;https://www.baidu.com&amp;#39;) var msg={url:&amp;#39;https://www.baidu.com&amp;#39;}; shineyue.pushurl(msg)    shineyue.pushurl(&amp;#39;https://www.ba">
   
     <link rel="alternative" href="/atom.xml" title="乔胖纸的博客" type="application/atom+xml">
   
@@ -144,64 +146,608 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-js交互方法" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/04/15/react/" class="archive-article-date">
-  	<time datetime="2019-04-15T07:42:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-15</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/04/15/react/">react笔记</a>
+    <h1 class="article-title" itemprop="name">
+      js交互方法
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/12/06/js交互方法/" class="archive-article-date">
+  	<time datetime="2019-12-06T06:40:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="新旧js交互方法"><a href="#新旧js交互方法" class="headerlink" title="新旧js交互方法"></a>新旧js交互方法</h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><strong>页面</strong></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">方法名</td>
+<td style="text-align:center">旧的交互</td>
+<td style="text-align:center">新的交互</td>
+</tr>
+<tr>
+<td style="text-align:center">打开新页面</td>
+<td style="text-align:center"><code>shineyue.pushurl(&#39;https://www.baidu.com&#39;)</code></td>
+<td style="text-align:center"><code>var msg={url:&#39;https://www.baidu.com&#39;}; shineyue.pushurl(msg)    shineyue.pushurl(&#39;https://www.baidu.com&#39;)</code><br>可选参数：<br>打开页面 type(非必传):present模态一个临时页面<br> url(必传):&lt;br /页面地址 title(非必传):页面标题 <br>hideNav(非必传):YES隐藏<br>nav statusBarStyle(非必传): 状态栏颜色 1(白色) navBackButtonColor,navBackgroundColor,navTitleColor(非必传):nav颜色<br> hideNavLine(非必传)  YES时隐藏nav的分割线</td>
+</tr>
+<tr>
+<td style="text-align:center">关闭页面</td>
+<td style="text-align:center"><code>shineyue.popViewController()</code></td>
+<td style="text-align:center"><code>shineyue.popViewController(function () {     console.log(&#39;关闭页面&#39;) })</code></td>
+</tr>
+<tr>
+<td style="text-align:center">返回根视图</td>
+<td style="text-align:center"><code>shineyue.popRootViewController()</code></td>
+<td style="text-align:center"><code>shineyue.popRootViewController(function () {     console.log(&#39;返回根视图&#39;) })</code></td>
+</tr>
+<tr>
+<td style="text-align:center">弹框关<br>闭页面</td>
+<td style="text-align:center"><code>shineyue.showAlertPop(&#39;提示&#39;, &#39;档案提交？&#39;, &#39;确定&#39;)</code></td>
+<td style="text-align:center"><code>var msg = {&#39;title&#39;:&#39;温馨提示&#39;,&#39;message&#39;:&#39;档案提交成功&#39;,&#39;buttons&#39;:&#39;确认&#39;}；shineyue.showAlertPop(obj,function () {})</code></td>
+</tr>
+<tr>
+<td style="text-align:center">弹框<br>返回根视图</td>
+<td style="text-align:center"><code>shineyue.showAlertPopRoot(&#39;提示&#39;, &#39;档案提交成功&#39;, &#39;确定&#39;)</code></td>
+<td style="text-align:center"><code>var msg = {&#39;title&#39;:&#39;温馨提示&#39;,&#39;message&#39;:&#39;档案提交成功&#39;,&#39;buttons&#39;:&#39;确认&#39;}；shineyue.showAlertPopRoot(obj,function(){})</code></td>
+</tr>
+<tr>
+<td style="text-align:center">右按钮</td>
+<td style="text-align:center"><code>shineyue.setRightBarTitle(&#39;百度1&#39;,</code><br><code>window.location.href, &#39;#C021DC&#39;);旧版</code><br><code>原生需要调用js的方法：</code><br><code>function rightItemClick(){</code><br><code>console.log(&#39;我是右按钮的回调&#39;) }</code></td>
+<td style="text-align:center"><code>var bar={&#39;icon&#39;:&#39;scan&#39;}; shineyue.setRightBarTitle(bar,function (data) {     console.log(&#39;rightBar&#39;,data) })</code><br>可选参数:icon 可以是原生已有图标，可以是网络图<br>标title 标题 titleColor 标题颜色 可以只有icon右上<br>角只有一个标题 可以同时存在上下结构的图标加标题</td>
+</tr>
+<tr>
+<td style="text-align:center">图标右按钮</td>
+<td style="text-align:center"><code>shineyue.setRightBarIcon(&quot;图片url&quot;);</code><br><strong>回调都为 rightItemClick</strong></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">导航栏</td>
+<td style="text-align:center"><code>shineyue.setNavigationBar(&quot;#C021DC&quot;,</code><br><code>&quot;#ffffff&quot;,&quot;#34F810&quot;);</code><br>参数：导航背景色，导航字体颜色，<br>导航阴影色</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">标题</td>
+<td style="text-align:center"><code>shineyue.setTitle(&#39;设置标题&#39;)</code></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">进度条</td>
+<td style="text-align:center"><code>shineyue.showProgress(&quot;#C021DC&quot;,</code><br><code>&quot;#000000&quot;);</code>参数：进度颜色 底色</td>
+<td style="text-align:center"><a id="more"></a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center"><strong>弹框</strong></th>
+<th style="text-align:center"><strong>注意:新版的交互所有需要返回值的都在回调函数的data里面取得下面所有的取值都是在data</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td style="text-align:center">旧的交互</td>
+<td style="text-align:center">新的交互</td>
+</tr>
+<tr>
+<td>alert</td>
+<td style="text-align:center"><code>shineyue.showAlert(&quot;提示&quot;, &quot;我是一个alert&quot;,&quot;确定&quot;)</code></td>
+<td style="text-align:center"><code>var message = {&#39;title&#39;:&#39;温馨提示&#39;,&#39;message&#39;:</code><br><code>&#39;我是一个提示框&#39;,&#39;buttons&#39;:&#39;确认&#39;} shineyue.showAlert</code><br><code>(message,function () {     console.log(&#39;alert&#39;) })</code></td>
+</tr>
+<tr>
+<td>confirm</td>
+<td style="text-align:center"><code>shineyue.showConfirm(&quot;提示&quot;, &quot;是否确认退出！&quot;,&quot;确定&quot;,&quot;取消&quot;)</code></td>
+<td style="text-align:center"><code>var message = {&#39;title&#39;:&#39;温馨提示&#39;,&#39;message&#39;:</code><br><code>&#39;我是一个confirm输入框&#39;,&#39;buttons&#39;:[&#39;确定&#39;,&#39;取消&#39;]}; shineyue.showConfirm(message,function (data) {</code><br><code>console.log(&#39;confirm&#39;,data) })</code><br><code>返回结果0确定 1取消：{buttonIndex:0}</code></td>
+</tr>
+<tr>
+<td>prompt</td>
+<td style="text-align:center"><code>shineyue.showPrompt(&quot;提示&quot;, &quot;请输入！&quot;)</code></td>
+<td style="text-align:center"><code>var message = {&#39;title&#39;:&#39;温馨提示&#39;,&#39;message&#39;:</code><br><code>&#39;我是一个prompt输入框&#39;,&#39;buttons&#39;:[&#39;提交&#39;,&#39;取消&#39;]}; shineyue.showPrompt(message,function ()</code><br><code>{     console.log(&#39;prompt&#39;) })</code><br><code>返回结果0提交 1取消：{butonIndex:0,value:&#39;内容&#39;}</code></td>
+</tr>
+<tr>
+<td>toast</td>
+<td style="text-align:center"><code>shineyue.showInfo(&quot;消息提示&quot;);</code></td>
+<td style="text-align:center"><code>var message = {&#39;message&#39;:&#39;我是一个从cordova里面拷贝出来的&#39;,&#39;duration&#39;:&#39;short&#39;,&#39;position&#39;:&#39;center&#39;}; shineyue.showInfo(message,function ()</code><br><code>{     console.log(&#39;toast&#39;) })</code></td>
+</tr>
+<tr>
+<td>loading</td>
+<td style="text-align:center"><code>shineyue.showStatus();</code></td>
+<td style="text-align:center"><code>shineyue.showStatus({&#39;title&#39;:&#39;正在加载&#39;},</code><br><code>function (data) {     console.log(&#39;loading&#39;) })</code></td>
+</tr>
+<tr>
+<td>取消loading</td>
+<td style="text-align:center"><code>shineyue.showDismiss();</code></td>
+<td style="text-align:center"><code>shineyue.showDismiss(function (data) {</code><br><code>console.log(&#39;loading&#39;) })</code></td>
+</tr>
+<tr>
+<td>showArray</td>
+<td style="text-align:center"><code>var res=shineyue.showArray(&quot;请选择一项&quot;,&quot;照相,视频,相册&quot;);接收返回值 0,1，2</code></td>
+<td style="text-align:center"><code>var message = [&quot;选项一&quot;,&quot;选项二&quot;,&quot;选项三&quot;,&quot;选项四&quot;]; shineyue.showSheet(message,function (data) {     console.log(&#39;index&#39;,data) })</code><br><code>返回值obj里面点击结果0,1,2,3：{buttonIndex:&quot;2&quot;}</code></td>
+</tr>
+<tr>
+<td>带确定取消的sheet</td>
+<td style="text-align:center"><code>console.log(&quot;sheet&quot;,shineyue.showSheet(&quot;是否拨打12329热线&quot;,&quot;确定&quot;,&quot;取消&quot;))</code></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>error</td>
+<td style="text-align:center"><code>shineyue.showError(&quot;网络错误&quot;);</code></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td>success</td>
+<td style="text-align:center"><code>shineyue.showSuccess(&quot;成功提示&quot;);</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><strong>小功能</strong></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">旧的交互</td>
+<td style="text-align:center">新的交互</td>
+</tr>
+<tr>
+<td style="text-align:center">设备信息</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>shineyue.getDeviceInfo(function(data)</code><br><code>{console.log(&#39;device&#39;,data) })</code></td>
+</tr>
+<tr>
+<td style="text-align:center">APP version</td>
+<td style="text-align:center"><code>console.log(&#39;getVersion&#39;,shineyue.getVersion())</code></td>
+<td style="text-align:center"><code>shineyue.getAppVersion(function (data) {     console.log(&#39;version&#39;,data) })</code></td>
+</tr>
+<tr>
+<td style="text-align:center">Uuid</td>
+<td style="text-align:center"><code>console.log(&#39;udd&#39;,shineyue.getUuid())</code></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">打电话</td>
+<td style="text-align:center"><code>shineyue.cellphone(&#39;15732151953&#39;)</code><br><code>不支持多个电话，多个电话只有第一个</code></td>
+<td style="text-align:center"><code>shineyue.cellphone({&#39;phone&#39;:&#39;13592657360&#39;}</code><br><code>,function () {console.log(&#39;callPhone&#39;) })</code></td>
+</tr>
+<tr>
+<td style="text-align:center">邮件发送</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>var obj={</code><br><code>&#39;toRecipients&#39;:&#39;11111@qq.com&#39;,</code><br><code>&#39;ccRecipients&#39;:&#39;22222@qq.com&#39;,</code><br><code>&#39;bccRecipients&#39;:&#39;33333@qq.com&#39;,</code><br><code>&#39;subject&#39;:&#39;444444444&#39;,</code><br><code>&#39;emailContent&#39;:&#39;555555555&#39;,</code><br><code>&#39;isHTML&#39;:&#39;1&#39;};</code><br><code>shineyue.sendEmail(obj,</code><br><code>function (data) {</code><br><code>console.log(&#39;sendEmail&#39;,data) })</code><br>可选参数：toRecipients:收件人,多人,用’,’分割 ccRecipients:抄送,多人,用’,’分割 bccRecipients:密送,多人,用’,’分割 subject:主题 emailContent:发送内容 isHTML:是否是网页(1:网页,如果是网页,emailContent内容需要是网页的源码)`</td>
+</tr>
+<tr>
+<td style="text-align:center">扫一扫</td>
+<td style="text-align:center"><code>shineyue.qrcode();</code></td>
+<td style="text-align:center"><code>shineyue.scan(function (data) {     console.log(&#39;scan&#39;,data) })</code></td>
+</tr>
+<tr>
+<td style="text-align:center">震动</td>
+<td style="text-align:center"><code>shineyue.deviceVibrate();</code></td>
+<td style="text-align:center"><code>shineyue.vibration(function (data) {     console.log(&#39;vibration&#39;,data) })</code></td>
+</tr>
+<tr>
+<td style="text-align:center">系统提示音</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>var obj={&#39;soundsID&#39;:&#39;1331&#39;}; shineyue.systemSound(obj,function (data) {     console.log(&#39;systemSound&#39;,data) })</code><br><code>声音对照表 https://blog.csdn.net/u012769548/</code><br><code>article/details/45364129</code></td>
+</tr>
+<tr>
+<td style="text-align:center">长截屏</td>
+<td style="text-align:center"><code>shineyue.saveScreenShot();</code></td>
+<td style="text-align:center"><code>shineyue.screenshot(function (data) {     console.log(&#39;systemSound&#39;,data) })</code><br><strong>建议截屏按钮写在页面最下方,不然可能存在不能截全屏的问题</strong></td>
+</tr>
+<tr>
+<td style="text-align:center">获取截图内容</td>
+<td style="text-align:center"><code>console.log(shineyue.makeScreenShot(0.3));</code><br>可选参数：scale base64比例</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">app是否存在</td>
+<td style="text-align:center"><code>if(!isiOS){     res=shineyue.appIsExist(&quot;微信&quot;,&quot;com.tencent.mm&quot;); }else{     res=shineyue.appIsExist(&quot;微信&quot;,&quot;weixin://&quot;); } console.log(&#39;isExist&#39;,res)</code></td>
+<td style="text-align:center">·var  obj={‘url’:’alipay://‘}; shineyue.APPIsExist(obj,function (data) {     console.log(‘APPIsExist’,data) })·</td>
+</tr>
+<tr>
+<td style="text-align:center">跳转指定APP</td>
+<td style="text-align:center"><code>if(!isiOS){     shineyue.urlScheme(&quot;微信&quot;,&quot;com.tencent.mm&quot;); }else{     shineyue.urlScheme(&quot;微信&quot;,&quot;weixin://&quot;); }</code></td>
+<td style="text-align:center"><code>var  obj={&#39;url&#39;:&#39;alipay://&#39;}; shineyue.jumpAPP(obj,function (data) {     console.log(&#39;APPIsExist&#39;,data) })</code></td>
+</tr>
+<tr>
+<td style="text-align:center">时间弹框</td>
+<td style="text-align:center"><code>console.log(&#39;date&#39;,shineyue.datePicker())</code></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">跳转原生页面</td>
+<td style="text-align:center"><code>shineyue.openRouterPage(</code><br><code>{openUrl:&quot;sjgjj://openPage/AccountQuery&quot;});</code><br><code>可选参数：跳html url必传  openUrl必传 跳社区  url titleId 必传 openUrl必传  跳原生页 openUrl必传</code></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">打开社区</td>
+<td style="text-align:center"><code>shineyue.openCommunity();</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><strong>文件管理</strong></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center">旧的交互</td>
+<td style="text-align:center">新的交互</td>
+</tr>
+<tr>
+<td style="text-align:center">拍照or录像</td>
+<td style="text-align:center"><code>shineyue.deviceCamera(&quot;1&quot;);</code><br><code>可选参数：1 拍照 2录像</code></td>
+<td style="text-align:center"><code>shineyue.camera(function () { console.log(&quot;拍照&quot;)})</code></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>shineyue.video(function(){console.log(&#39;拍视频&#39;) })</code></td>
+</tr>
+<tr>
+<td style="text-align:center">相册</td>
+<td style="text-align:center"><code>shineyue.devicePhoto();</code></td>
+<td style="text-align:center"><code>shineyue.deviceChoose(function (data) {     console.log(&#39;choosePicture&#39;,data) })</code></td>
+</tr>
+<tr>
+<td style="text-align:center">图片<br>选择<br>（拍照，<br>拍视<br>频，相册）</td>
+<td style="text-align:center"><code>console.log(&#39;imgs&#39;,shineyue.deviceChoose());</code></td>
+<td style="text-align:center"><code>shineyue.photo(function(){console.log(&#39;相册&#39;) })</code></td>
+</tr>
+<tr>
+<td style="text-align:center">图片浏览器</td>
+<td style="text-align:center"><code>shineyue.previewImage(&quot;图片url,url&quot;,0);</code></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">pdf</td>
+<td style="text-align:center"><code>shineyue.loadPDF(url)</code></td>
+<td style="text-align:center"><code>var obj={&#39;url&#39;:&quot;pdfurl&quot;,&#39;fileName&#39;:&#39;我打开的PDF&#39;,&#39;fileType&#39;:&#39;pdf&#39;}; shineyue.loadFile(obj,function (data) {     console.log(&#39;loadFile&#39;,data) })</code><br><code>可加载pdf可加载word excel</code></td>
+</tr>
+<tr>
+<td style="text-align:center">file</td>
+<td style="text-align:center"><code>shineyue.loadFile(url);</code></td>
+<td style="text-align:center">同上</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center"><strong>分享</strong></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td style="text-align:center">旧的交互</td>
+<td style="text-align:center">新的交互</td>
+</tr>
+<tr>
+<td>带弹框的分享</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>shineyue.shareAlert(function (data) {     console.log(&#39;shareAlert&#39;,data) });</code></td>
+</tr>
+<tr>
+<td>分享到具体的模块</td>
+<td style="text-align:center"><code>var obj={type:&quot;friend&quot;,title:&quot;手机公积金&quot;,</code><br><code>detail:&quot;手机公积金分享&quot;,</code><br><code>img:&quot;http://pic32.nipic.com/20130823/</code><br><code>13339320_183302468194_2.jpg&quot;,     url:window.location.href } shineyue.share(obj);</code></td>
+<td style="text-align:center"><code>var obj={&#39;platform&#39;:&#39;1&#39;};</code><br><code>shineyue.share(obj,function (data) {     console.log(&#39;share&#39;,data) });</code><br>可选参数：0 朋友圈 1微信好友`</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center"><strong>数据相关</strong></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td style="text-align:center">旧的交互</td>
+<td style="text-align:center">新的交互</td>
+</tr>
+<tr>
+<td>数据存储</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>var obj1={&#39;age&#39;:&#39;18&#39;,&#39;value&#39;:&#39;赵旭东&#39;};</code><br><code>var obj={&#39;key&#39;:&#39;account&#39;,&#39;value&#39;:obj1};</code><br><code>shineyue.saveItem(obj,function (data)</code><br><code>{ console.log(&#39;saveItem&#39;,data) });</code></td>
+</tr>
+<tr>
+<td>存储数据获取</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>var obj={&#39;key&#39;:&#39;account&#39;};</code><br><code>shineyue.getItem(obj,</code><br><code>function (data) {console.log(&#39;getItem&#39;,data) });</code></td>
+</tr>
+<tr>
+<td>删除存储数据</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>var obj={&#39;key&#39;:&#39;account&#39;};</code><br><code>shineyue.removeItem(obj,function (data) {</code><br><code>console.log(&#39;removeItem&#39;,data) });</code></td>
+</tr>
+<tr>
+<td>数据加密</td>
+<td style="text-align:center"><code>var obj={     xingming:&quot;唐海潮&quot;,     zjhm:&quot;13062619921201003X&quot; }; encData=shineyue.bangbangEncrypt(obj);</code></td>
+<td style="text-align:center"><code>var obj={&#39;name&#39;:&#39;赵旭东&#39;};</code><br><code>shineyue.encrypt(obj,</code><br><code>function (data) {console.log(&#39;encrypt&#39;,data) });</code></td>
+</tr>
+<tr>
+<td>数据解密</td>
+<td style="text-align:center"><code>console.log(&quot;解密&quot;,shineyue.bangbangDecrypt(encData));</code></td>
+<td style="text-align:center"><code>var obj={&#39;encryptString&#39;:</code><br><code>&quot;y3ngsFuuwn6J2gx9teVYHpOsycpu4L8P0OkWgx2nGkQ=&quot;};</code><br><code>shineyue.decrypt(obj,function (data) {</code><br><code>console.log(&#39;decrypt&#39;,data) });</code></td>
+</tr>
+<tr>
+<td>清除缓存</td>
+<td style="text-align:center"><code>shineyue.deleteWebCache();</code></td>
+<td style="text-align:center"><code>shineyue.clearCache(function (data) {</code><br><code>console.log(&#39;clearCache&#39;,data) });</code></td>
+</tr>
+<tr>
+<td>网络状态</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><code>shineyue.networkStatus(function (data)</code><br><code>{console.log(&#39;networkStatus&#39;,data) });</code></td>
+</tr>
+<tr>
+<td>数据请求</td>
+<td style="text-align:center">太多省略….</td>
+<td style="text-align:center">太多省略…</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center"><strong>位置信息</strong></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td style="text-align:center">旧的交互</td>
+<td style="text-align:center">新的交互</td>
+</tr>
+<tr>
+<td>当前位置</td>
+<td style="text-align:center"><code>console.log(&#39;位置&#39;, shineyue.makeLocation())</code></td>
+<td style="text-align:center"><code>shineyue.getLocation(function (data) {     console.log(&#39;getLocation&#39;,data) });</code></td>
+</tr>
+<tr>
+<td>导航</td>
+<td style="text-align:center"><code>shineyue.makeNavigation(&quot;38.050673&quot;,&quot;114.346618&quot;,</code><br><code>&quot;37.232&quot;,&quot;113.301&quot;)</code><br><code>可选参数：当前位置lat log 目的地lat log</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>OCR</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>旧的交互</td>
+<td>新的交互</td>
+</tr>
+<tr>
+<td>一砂人脸识别</td>
+<td></td>
+<td><code>var obj={&#39;xingming&#39;:&#39;赵旭东&#39;,&#39;zjhm&#39;:&#39;411325199406286531&#39;}; shineyue.ysFaceVerify(obj,function (data) {     console.log(&#39;ysFaceVerify&#39;,data) });</code></td>
+</tr>
+<tr>
+<td>工行人脸识别</td>
+<td></td>
+<td><code>var obj={&#39;xingming&#39;:&#39;赵旭东&#39;,&#39;zjhm&#39;:&#39;411325199406286531&#39;}; shineyue.ghFaceVerify(obj,function (data) {     console.log(&#39;ghFaceVerify&#39;,data) });</code></td>
+</tr>
+<tr>
+<td>佐罗人脸识别</td>
+<td></td>
+<td><code>var data={&#39;xingming&#39;:&#39;赵旭东&#39;,</code><br><code>&#39;zjhm&#39;:&#39;411325199406286531&#39;,</code><br><code>&quot;citymbm&quot;:&quot;BZB001CF&quot;,</code><br><code>&quot;citycode&quot;:&quot;CSY001&quot;,</code><br><code>&quot;appid&quot;:&quot;20181109000102&quot;};</code><br><code>var header={&quot;appid&quot;:&quot;20181109000102&quot;,</code><br><code>&quot;account&quot;:&quot;zjhm_411325199406286531&quot;,</code><br><code>&quot;citycode&quot;:&quot;CSY001&quot;};</code><br><code>var url=&quot;https://appcs.sjgjj.cn/</code><br><code>app-web/public/antCloud/faceCertify.service&quot;;</code><br><code>var isSign=&quot;1&quot;;//1 加签 else  &quot;&quot; 不加签</code><br><code>var obj={data:data, header:header, url:url,isSign:isSign }; shineyue.zoloFaceVerify(obj,function (data) {     console.log(&#39;zoloFaceVerify&#39;,data) });</code></td>
+</tr>
+<tr>
+<td>文通身份证识别</td>
+<td><code>文通旧版有两种写法，一种是直接判断成功失败是个返回值，一种调返回图片base64详见js实例</code></td>
+<td><code>var obj={&#39;resultType&#39;:&#39;imageAndMessage&#39;}; shineyue.IDcardVerify(obj,function (data) {     console.log(&#39;IDcardVerify&#39;,data) });</code></td>
+</tr>
+<tr>
+<td>银行卡识别</td>
+<td><code>文通旧版有两种写法，一种是直接判断成功失败是个返回值，一种调返回图片base64详见js实例</code></td>
+<td><code>shineyue.yhkVerify({},function (data) { console.log(&#39;yhkVerify&#39;,data) });</code></td>
+</tr>
+</tbody>
+</table>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wx.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">学习</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">react</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">原生</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/12/06/js交互方法/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/04/15/react/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">react笔记</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#新旧js交互方法"><span class="toc-number">1.</span> <span class="toc-text">新旧js交互方法</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -224,9 +770,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,

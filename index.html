@@ -146,6 +146,148 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-js交互方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/12/06/js交互方法/">js交互方法</a>
+    </h1>
+  
+
+        
+        <a href="/2019/12/06/js交互方法/" class="archive-article-date">
+  	<time datetime="2019-12-06T06:40:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="新旧js交互方法"><a href="#新旧js交互方法" class="headerlink" title="新旧js交互方法"></a>新旧js交互方法</h2><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"><strong>页面</strong></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">方法名</td>
+<td style="text-align:center">旧的交互</td>
+<td style="text-align:center">新的交互</td>
+</tr>
+<tr>
+<td style="text-align:center">打开新页面</td>
+<td style="text-align:center"><code>shineyue.pushurl(&#39;https://www.baidu.com&#39;)</code></td>
+<td style="text-align:center"><code>var msg={url:&#39;https://www.baidu.com&#39;}; shineyue.pushurl(msg)    shineyue.pushurl(&#39;https://www.baidu.com&#39;)</code><br>可选参数：<br>打开页面 type(非必传):present模态一个临时页面<br> url(必传):&lt;br /页面地址 title(非必传):页面标题 <br>hideNav(非必传):YES隐藏<br>nav statusBarStyle(非必传): 状态栏颜色 1(白色) navBackButtonColor,navBackgroundColor,navTitleColor(非必传):nav颜色<br> hideNavLine(非必传)  YES时隐藏nav的分割线</td>
+</tr>
+<tr>
+<td style="text-align:center">关闭页面</td>
+<td style="text-align:center"><code>shineyue.popViewController()</code></td>
+<td style="text-align:center"><code>shineyue.popViewController(function () {     console.log(&#39;关闭页面&#39;) })</code></td>
+</tr>
+<tr>
+<td style="text-align:center">返回根视图</td>
+<td style="text-align:center"><code>shineyue.popRootViewController()</code></td>
+<td style="text-align:center"><code>shineyue.popRootViewController(function () {     console.log(&#39;返回根视图&#39;) })</code></td>
+</tr>
+<tr>
+<td style="text-align:center">弹框关<br>闭页面</td>
+<td style="text-align:center"><code>shineyue.showAlertPop(&#39;提示&#39;, &#39;档案提交？&#39;, &#39;确定&#39;)</code></td>
+<td style="text-align:center"><code>var msg = {&#39;title&#39;:&#39;温馨提示&#39;,&#39;message&#39;:&#39;档案提交成功&#39;,&#39;buttons&#39;:&#39;确认&#39;}；shineyue.showAlertPop(obj,function () {})</code></td>
+</tr>
+<tr>
+<td style="text-align:center">弹框<br>返回根视图</td>
+<td style="text-align:center"><code>shineyue.showAlertPopRoot(&#39;提示&#39;, &#39;档案提交成功&#39;, &#39;确定&#39;)</code></td>
+<td style="text-align:center"><code>var msg = {&#39;title&#39;:&#39;温馨提示&#39;,&#39;message&#39;:&#39;档案提交成功&#39;,&#39;buttons&#39;:&#39;确认&#39;}；shineyue.showAlertPopRoot(obj,function(){})</code></td>
+</tr>
+<tr>
+<td style="text-align:center">右按钮</td>
+<td style="text-align:center"><code>shineyue.setRightBarTitle(&#39;百度1&#39;,</code><br><code>window.location.href, &#39;#C021DC&#39;);旧版</code><br><code>原生需要调用js的方法：</code><br><code>function rightItemClick(){</code><br><code>console.log(&#39;我是右按钮的回调&#39;) }</code></td>
+<td style="text-align:center"><code>var bar={&#39;icon&#39;:&#39;scan&#39;}; shineyue.setRightBarTitle(bar,function (data) {     console.log(&#39;rightBar&#39;,data) })</code><br>可选参数:icon 可以是原生已有图标，可以是网络图<br>标title 标题 titleColor 标题颜色 可以只有icon右上<br>角只有一个标题 可以同时存在上下结构的图标加标题</td>
+</tr>
+<tr>
+<td style="text-align:center">图标右按钮</td>
+<td style="text-align:center"><code>shineyue.setRightBarIcon(&quot;图片url&quot;);</code><br><strong>回调都为 rightItemClick</strong></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">导航栏</td>
+<td style="text-align:center"><code>shineyue.setNavigationBar(&quot;#C021DC&quot;,</code><br><code>&quot;#ffffff&quot;,&quot;#34F810&quot;);</code><br>参数：导航背景色，导航字体颜色，<br>导航阴影色</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">标题</td>
+<td style="text-align:center"><code>shineyue.setTitle(&#39;设置标题&#39;)</code></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">进度条</td>
+<td style="text-align:center"><code>shineyue.showProgress(&quot;#C021DC&quot;,</code><br><code>&quot;#000000&quot;);</code>参数：进度颜色 底色</td>
+<td style="text-align:center"></td></tr></tbody></table>
+        
+          <a class="article-more-a" href="/2019/12/06/js交互方法/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">原生</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/12/06/js交互方法/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-react" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -397,6 +539,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">学习</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">react</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">生活</a>
               </li>
              
@@ -409,11 +559,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">学习</a>
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">react</a>
+                <a href="javascript:void(0)" class="js-tag color3">原生</a>
               </li>
             
             <div class="clearfix"></div>
